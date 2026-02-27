@@ -21,20 +21,11 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -50,22 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDm47JGI8CiYcTe_pXu-hWQzuC1wlx_wOQ',
-    appId: '1:818305370628:web:c1386fdea33ce9aabc0351',
-    messagingSenderId: '818305370628',
-    projectId: 'skindare-10956',
-    authDomain: 'skindare-10956.firebaseapp.com',
-    storageBucket: 'skindare-10956.firebasestorage.app',
-    measurementId: 'G-TPVFWB1740',
+    apiKey: 'AIzaSyCnJtcVidqIFbDSKNl3TEwYtOXOLqA-iPE',
+    appId: '1:653873772952:web:caf66154875dc0e842d3ed',
+    messagingSenderId: '653873772952',
+    projectId: 'skindareapplication',
+    authDomain: 'skindareapplication.firebaseapp.com',
+    storageBucket: 'skindareapplication.firebasestorage.app',
+    measurementId: 'G-5PF2N3X3EX',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBCWfxwtyNUgdtBpTr238kdiVOFqoXjvxE',
+    appId: '1:653873772952:android:c98a8efc5a3c05c042d3ed',
+    messagingSenderId: '653873772952',
+    projectId: 'skindareapplication',
+    storageBucket: 'skindareapplication.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyB0hERPjfueJeAdR6AnIMQcYRzEzOYALes',
+    appId: '1:653873772952:ios:cf7611359bd86e6c42d3ed',
+    messagingSenderId: '653873772952',
+    projectId: 'skindareapplication',
+    storageBucket: 'skindareapplication.firebasestorage.app',
+    iosBundleId: 'com.example.skindare',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyB0hERPjfueJeAdR6AnIMQcYRzEzOYALes',
+    appId: '1:653873772952:ios:cf7611359bd86e6c42d3ed',
+    messagingSenderId: '653873772952',
+    projectId: 'skindareapplication',
+    storageBucket: 'skindareapplication.firebasestorage.app',
+    iosBundleId: 'com.example.skindare',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDm47JGI8CiYcTe_pXu-hWQzuC1wlx_wOQ',
-    appId: '1:818305370628:web:dcf16ddfffe5c54bbc0351',
-    messagingSenderId: '818305370628',
-    projectId: 'skindare-10956',
-    authDomain: 'skindare-10956.firebaseapp.com',
-    storageBucket: 'skindare-10956.firebasestorage.app',
-    measurementId: 'G-19WEK5K7B2',
+    apiKey: 'AIzaSyCnJtcVidqIFbDSKNl3TEwYtOXOLqA-iPE',
+    appId: '1:653873772952:web:6df28722480a896342d3ed',
+    messagingSenderId: '653873772952',
+    projectId: 'skindareapplication',
+    authDomain: 'skindareapplication.firebaseapp.com',
+    storageBucket: 'skindareapplication.firebasestorage.app',
+    measurementId: 'G-BGSVK8SGED',
   );
 }
