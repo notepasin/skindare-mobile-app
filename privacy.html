@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Skindare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue:     #4A90E2;
+    --blue-dark:#1A5FA0;
+    --blue-bg:  #EBF4FF;
+    --ink:      #0F1C2E;
+    --muted:    #4A5568;
+    --rule:     rgba(74,144,226,0.14);
+    --surface:  #F7FAFD;
+    --white:    #FFFFFF;
+  }
+
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: var(--muted);
+    background: var(--surface);
+    font-size: 15px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(140deg, #0D2F55 0%, #1A5FA0 100%);
+    padding: 48px 24px 44px;
+    text-align: center;
+  }
+  header .app { font-family: 'DM Serif Display', Georgia, serif; font-size: 20px; color: rgba(255,255,255,0.5); margin-bottom: 6px; }
+  header h1  { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(26px,5vw,38px); color: #fff; letter-spacing: -.02em; margin-bottom: 14px; }
+  header .date { display: inline-block; font-size: 12px; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.14); padding: 4px 14px; border-radius: 50px; }
+
+  /* ── MAIN ── */
+  main { max-width: 680px; margin: 0 auto; padding: 44px 24px 80px; }
+
+  /* ── SECTIONS ── */
+  section { margin-bottom: 36px; }
+  section:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  p { margin-bottom: 10px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  ul li {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 11px 15px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  ul li::before {
+    content: '';
+    width: 5px; height: 5px; min-width: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+    margin-top: 8px;
+  }
+
+  .note {
+    background: var(--blue-bg);
+    border: 1px solid rgba(74,144,226,0.2);
+    border-left: 3px solid var(--blue);
+    border-radius: 8px;
+    padding: 13px 16px;
+    font-size: 14px;
+    color: var(--blue-dark);
+    margin-top: 12px;
+  }
+
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--ink);
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+  }
+  footer span { font-family: 'DM Serif Display', Georgia, serif; color: rgba(255,255,255,0.6); font-size: 16px; display: block; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="app">Skindare</div>
+  <h1>Privacy Policy</h1>
+</header>
+
+<main>
+
+  <section>
+    <h2>About This Policy</h2>
+    <p>Skindare is a skincare routine tracking application. This policy explains what personal data we collect, how we use it, and how it is protected. By using Skindare, you agree to the practices described here.</p>
+  </section>
+
+  <section>
+    <h2>Data We Collect</h2>
+    <p>We collect only what is necessary to operate the app:</p>
+    <ul>
+      <li><strong>Email address</strong> — used for account authentication and login.</li>
+      <li><strong>Username</strong> — chosen during sign-up to identify your account within the app.</li>
+      <li><strong>Skincare data</strong> — product names, routines, concerns, and timestamps that you enter into the app.</li>
+    </ul>
+    <div class="note">We do not collect location data, contacts, camera access, payment information, or biometric data.</div>
+  </section>
+
+  <section>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To create and manage your account securely.</li>
+      <li>To store and display your skincare routines and product history.</li>
+      <li>To maintain app functionality and resolve technical issues.</li>
+    </ul>
+    <p style="margin-top:10px;">Your data is never used for advertising or commercial profiling.</p>
+  </section>
+
+  <section>
+    <h2>Data Storage</h2>
+    <p>Your data is stored using <strong>Google Firebase</strong> — specifically Firebase Authentication and Cloud Firestore. Firebase is operated by Google LLC and provides encrypted, secure cloud infrastructure. Data is transmitted over HTTPS and access is restricted to your account only.</p>
+    <p>For more information, see the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>Data Sharing</h2>
+    <p>We do not sell, rent, or share your personal data with any third party for commercial purposes. Your data is shared only with Firebase as a technical necessity to operate Skindare, and only as required by law.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>Skindare is not intended for users under the age of 13. We do not knowingly collect data from children. If you believe a child has registered, please contact us and we will delete the account promptly.</p>
+  </section>
+
+  <section>
+    <h2>Your Rights</h2>
+    <p>You may request access to, correction of, or deletion of your personal data at any time. To do so, contact us at the email below and we will respond within 30 days.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>For any questions or data requests, reach us at:<br>
+    <strong><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=lqrsljbfTzfLQRFzdrNQPFWlgBjtxrsNqXVQLXdhPhVvRFlkxhKTmrGsTnZTFcQHXHWsdRQFrwFVsNblf">6731503016@lamduan.mfu.ac.th</a></strong></p>
+  </section>
+
+</main>
+
+<footer>
+  <span>Skindare</span>
+  &copy; 2026 Skindare. All rights reserved.
+</footer>
+
+</body>
+</html>
